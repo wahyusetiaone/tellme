@@ -1,0 +1,33 @@
+{
+    "name": "abah/tell-me",
+    "description": "This is a helper for laravel create base on version 9.x",
+    "type": "library",
+    "license": "NONE",
+    "autoload": {
+        "psr-4": {
+            "Setone\\TellMe\\": [
+                "src/Helpers",
+                "src/Facades",
+                "src/Providers",
+            ]
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Setone\\TellMe\\Providers\\TellMeServiceProvider"
+            ],
+            "aliases": {
+               "TellMe" : "Setone\\TellMe\\Facades\\TellMeFacade"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Wahyu Setiawan",
+            "email": "wahyusetiaone27@gmail.com"
+        }
+    ],
+    "require": {}
+
+}
